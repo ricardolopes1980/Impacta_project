@@ -4,55 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Condômino/Usuários</title>
-    <style>
-        *{box-sizing: border-box;}
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            background-image: url(images/image.jpg);
-            background-size: cover;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        button[type="submit"],
-        button[type="reset"] {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        button[type="reset"] {
-            background-color: #FF0000;
-        }
-    </style>
+    <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Cadastro de Condômino/Usuário</h1>
+        <div class="logo">
+        <img src="images/predinho.svg" alt="">
+        </div>
+        <h1>Meu Condômino</h1>
+        <p>Entre com o seus dados para se cadastrar</p>
         <form action="users.php" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
@@ -81,6 +41,8 @@
             <button type="submit">Cadastra-se</button>
             <button type="reset">Limpar</button>
         </form>
+    </div>
+    <div class="predio">
     </div>
 </body>
 </html>

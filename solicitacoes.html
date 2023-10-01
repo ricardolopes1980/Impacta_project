@@ -4,55 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Solicitações</title>
-    <style>
-        *{box-sizing: border-box;}
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            background-image: url(images/image.jpg);
-            background-size: cover;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        button[type="submit"],
-        button[type="reset"] {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        button[type="reset"] {
-            background-color: #FF0000;
-        }
-    </style>
+    <link rel="stylesheet" href="solicitacoes_style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Cadastro de Solicitações</h1>
+        <div class="logo">
+            <img src="images/predinho.svg" alt="">
+            </div>
+        <h1>Criar uma solicitação</h1>
+        <p>O espaço de solicitação de ocorrência no nosso condomínio tem a finalidade de facilitar a nossa comunicação direta com a administração, permitindo que possamos relatar problemas, fazer solicitações de serviços e expressar preocupações de maneira organizada e eficaz.</p>
         <form action="solicitacoes.php" method="post" class="row g-3">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
@@ -91,12 +51,13 @@
             <input type="text" id="apartamento" name="apartamento" required>
             
             <label for="descricao" class="form-label">Descrição (opcional):</label>
-            <textarea class="form-control" rows="3" type="text" id="descricao" name="descricao"></textarea>
+            <textarea class="form-control" rows="6" type="text" id="descricao" name="descricao"></textarea>
             <p>
                                   
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Enviar Solicitação</button>
             <button type="reset">Limpar</button>
         </form>
     </div>
+    <div class="predio"></div>
 </body>
 </html>
