@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION["login"]["id"])){
+  header("location:index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -15,14 +21,14 @@
         <p>O espaço de solicitação de ocorrência no nosso condomínio tem a finalidade de facilitar a nossa comunicação direta com a administração, permitindo que possamos relatar problemas, fazer solicitações de serviços e expressar preocupações de maneira organizada e eficaz.</p>
         <form action="solicitacoes.php" method="post" class="row g-3">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required value="<?php echo $_SESSION["login"]["nome"] ?>">
             
             <label for="assunto">Assunto:</label>
             <input type="text" id="assunto" name="assunto" required>
             
             <div class="col-md-6">
                 <label for="setor" class="form-label">Setor</label>
-                <select id="setor" name=setor class="form-select" required>
+                <select id="setor" name=setor class="form-select" required style="width: 100%; height: 30px;">
                   <option selected>Escolha...</option>
                   <option value="1">Administração</option>
                   <option value="2">Limpeza</option>
@@ -32,7 +38,7 @@
             
             <div class="col-md-6">
                 <label for="areacomum" class="form-label">Área Comum</label>
-                <select id="areacomum" name=areacomum class="form-select" required>
+                <select id="areacomum" name=areacomum class="form-select" required style="width: 100%; height: 30px;">
                   <option selected>Escolha...</option>
                   <option value="1">Hall do Andar</option>
                   <option value="2">Hall do Prédio</option>
@@ -51,11 +57,14 @@
             <input type="text" id="apartamento" name="apartamento" required>
             
             <label for="descricao" class="form-label">Descrição (opcional):</label>
-            <textarea class="form-control" rows="6" type="text" id="descricao" name="descricao"></textarea>
+            <textarea class="form-control" rows="6" type="text" id="descricao" name="descricao" style="width: 100%;"></textarea>
             <p>
                                   
             <button type="submit">Enviar Solicitação</button>
             <button type="reset">Limpar</button>
+            <a href="logout.php">
+            <button type="button">Sair</button>
+            </a>
         </form>
     </div>
     <div class="predio"></div>

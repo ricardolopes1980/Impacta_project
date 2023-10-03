@@ -68,16 +68,22 @@
             border-bottom: 2px solid #000000;
 
         }
-        button[type="submit"],
-        button[type="reset"] {
-            background-color: #1B1D21;
+        button {
+            background-color: #1216ee;
             color: #fff;
             border: none;
             margin-top: 2vh;
             padding: 15px 30px;
             border-radius: 10px;
             cursor: pointer;
+            transition: 0.5s;
         }
         button[type="reset"] {
             background-color: #FF0000;
+        }
+        button[type="button"] {
+            background-color: #090909;
+        }
+        button:hover{
+            background-color: rgb(197, 211, 9);
         }
