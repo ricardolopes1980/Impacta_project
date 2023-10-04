@@ -11,10 +11,9 @@
             margin: 0;
         }
         .container {
-            height: 90vh;
+            height: 100%;
             max-width: 600px;
             margin: 0 auto;
-            padding: 1vh;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -22,14 +21,15 @@
 
         @media (max-width: 600px) {
             .container {
-              max-width: 300px;
+            margin:0;
+            max-width: 300px;
+            padding-top: 10vh;
             }
           }
 
-
         .predio{
             width: 40%;
-            height: 100vh;
+            height: 100%;
             background-image: url(images/lateral_predio.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -39,6 +39,20 @@
             .predio {
               display: none;
             }
+          }
+
+          .voltar{
+            width: 40px;
+            height: 40px;
+            margin: 20px;
+          }
+
+          @media (max-width: 600px) {
+            .voltar{
+                width: 30px;
+                height: 30px;
+                margin: 10px;
+              }
           }
 
         .logo{
@@ -51,10 +65,11 @@
             text-align: center;
         }
 
-        a{
+        .container a{
             color: black;
             text-decoration: none;
             font-weight: 800;
+            text-align: center;
         }
 
         spam{

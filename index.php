@@ -18,8 +18,8 @@ if(!empty($_SESSION["login"]["id"])){
         <div class="logo">
         <img src="images/predinho.svg" alt="">
         </div>
-        <h1>Meu Condominío</h1>
-        <p>Entre com o seus dados para se cadastrar</p>
+        <h1>Meu Condomínio</h1>
+        <p>Entre com o seu dados para acessar o portal</p>
         <form action="login.php" method="post">
             
             <label for="email">E-mail:</label>
@@ -27,13 +27,10 @@ if(!empty($_SESSION["login"]["id"])){
                       
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
-                        
-            <a href="usuario.html" role="button">
-                <button type="button" class="btn btn-primary">Cadastra-se</button>
-            </a>
+                    
             <button type="submit" class="btn btn-primary">Entrar</button>
-            
         </form>
+        <spam>Não tem uma conta? <a href="usuario.html" role="button">Cadastre-se</a></spam>
     </div>
     <div class="predio">
     </div>
