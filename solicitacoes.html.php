@@ -54,7 +54,7 @@ if(empty($_SESSION["login"]["id"])){
             -->
             
             <label for="apartamento">Apartamento:</label>
-            <input type="text" id="apartamento" name="apartamento" required>
+            <input type="text" id="apartamento" name="apartamento" required value="<?php echo $_SESSION["login"]["apartamento"] ?>">
             
             <label for="descricao" class="form-label">Descrição (opcional):</label>
             <textarea class="form-control" rows="6" type="text" id="descricao" name="descricao" style="width: 100%;"></textarea>
@@ -63,7 +63,7 @@ if(empty($_SESSION["login"]["id"])){
             <button type="submit">Enviar Solicitação</button>
             <button type="reset">Limpar</button>
             <a href="logout.php">
-            <button type="button">Sair</button>
+            <button type="button" allign="right">Sair</button>
             </a>
         </form>
     </div>
