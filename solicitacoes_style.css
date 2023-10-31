@@ -80,13 +80,13 @@
           border-radius: 10px;
           cursor: pointer;
           transition: 0.5s;
-      }
-      button[type="reset"] {
-          background-color: #FF0000;
-      }
-      button[type="button"] {
-          background-color: #090909;
-      }
-      button:hover{
-          background-color: rgb(197, 211, 9);
-      }
+        }
+        button[type="reset"] {
+            background-color: #FF0000;
+        }
+        button[type="button"] {
+            background-color: #090909;
+        }
+        button:hover{
+            background-color: rgb(197, 211, 9);
+        }

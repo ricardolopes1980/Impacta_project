@@ -71,7 +71,7 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" id="areacomum" name="areacomum" required>
             -->
             
-            <label for="apartamento">Apartamento:</label>
+            <label for="apartamento">Apartamento: </label>
             <input type="text" id="apartamento" name="apartamento" required value="<?php echo $_SESSION["login"]["apartamento"] ?>">
             
             <label for="descricao" class="form-label">Descrição (opcional):</label>
