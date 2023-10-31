@@ -62,8 +62,8 @@ if(empty($_SESSION["login"]["id"])){
                                   
             <button type="submit">Enviar Solicitação</button>
             <button type="reset">Limpar</button>
-            <a href="logout.php">
-            <button type="button" allign="right">Sair</button>
+            <a href="principal.php">
+            <button type="button">Voltar</button>
             </a>
         </form>
     </div>

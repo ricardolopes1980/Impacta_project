@@ -56,10 +56,15 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><a href="excluir.php?id=<?=$ln["id"]?>">Excluir</a></td>
           </tr>
           <?php } ?>
+          
 
         </tbody>
 
       </table>
+
+      <a href="principal.php">
+            <button type="button">Voltar</button>
+      </a>
 
     </div>
     

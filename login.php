@@ -40,7 +40,7 @@ $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
 
 if (count($resultado)==1){
     $_SESSION["login"]=$resultado[0];
-    header("location:solicitacoes.html.php");
+    header("location:principal.php");
 }else{
     header("location:index.php");
 }

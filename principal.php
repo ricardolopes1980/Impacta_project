@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION["login"]["id"])){
+  header("location:index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -9,24 +15,24 @@
 </head>
 <body>
 <div class="geral">
-    <a href="index.php" role="button"><img class="voltar" src="images/logout.svg" alt=""></a>
+    <a href="logout.php" role="button"><img class="voltar" src="images/logout.svg" alt=""></a>
         <div class="container">
             <div class="logo">
                 <img src="images/predinho.svg" alt="">
                 <h1>Meu Condomínio</h1>
             </div>
-            <h2>Bem Vindo,<b>Victor Mendes de Almeida</b></h2>
-            <p>Costa Real | Apartamento 33 Bloco A</p>
+            <h2>Bem Vindo, <b><?php echo $_SESSION["login"]["nome"]?></b></h2>
+            <p><h2>Apartamento <?php echo $_SESSION["login"]["apartamento"]?></h2></p>
             <div class="menus">
                     <div class="botoes">
-                        <a href="logout.php">
+                        <a href="solicitacoes.html.php">
                         <Button><img src="images/livro.png" alt="">
                         <h4>Criar Solicitação</h4>
                         </Button>
                         </a>
                     </div>
                     <div class="botoes">
-                        <a href="logout.php">
+                        <a href="listar.php">
                         <Button><img src="images/editor.png" alt="">
                         <h4>Editar Solicitação</h4>
                         </Button>
@@ -35,7 +41,7 @@
                     <div class="botoes">
                         <a href="logout.php">
                         <Button><img src="images/leitor.png" alt="">
-                        <h4>Respostas</h4>
+                        <h4>Sair</h4>
                         </Button>
                         </a>
                     </div>
