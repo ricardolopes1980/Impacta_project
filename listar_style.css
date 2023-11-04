@@ -12,14 +12,15 @@
         }
         .container {
             height: 90vh;
-            max-width: 40%;
-            margin: 0 auto;
+            max-width: 50%;
+            margin: 2vw 5vh;
             padding: 1vh; 
         }
 
         @media (max-width: 900px) {
             .container {
               max-width: 80%;
+              margin: 0 auto;
             }
           }
 
@@ -72,7 +73,7 @@
 
         }
         button {
-          background-color: #090909;
+          background-color: #1216ee;
           color: #fff;
           border: none;
           margin-top: 2vh;
@@ -81,12 +82,31 @@
           cursor: pointer;
           transition: 0.5s;
         }
-        button[type="reset"] {
-            background-color: #FF0000;
-        }
         button[type="button"] {
             background-color: #090909;
         }
         button:hover{
             background-color: rgb(0, 0, 0);
         }
+
+
+td{
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding-bottom: 1vh;
+    padding-top:1vh ;
+}
+
+th{
+    text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.editar{
+   margin-right: -1.2vw;
+}
+

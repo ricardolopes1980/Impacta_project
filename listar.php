@@ -26,7 +26,7 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Solicitações</title>
-    <link rel="stylesheet" href="solicitacoes_style.css">
+    <link rel="stylesheet" href="listar_style.css">
 </head>
 <body>
     <div class="container">
@@ -35,14 +35,14 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
         <h1>Listagem de solicitações</h1>
-        <p>O espaço de solicitação de ocorrência no nosso condomínio tem a finalidade de facilitar a nossa comunicação direta com a administração, permitindo que possamos relatar problemas, fazer solicitações de serviços e expressar preocupações de maneira organizada e eficaz.</p>
+        <p>Se por algum motivo surgir a necessidade de alterar ou excluir uma solicitação que tenha sido feita anteriormente, você pode ficar tranquilo, pois essa possibilidade está ao seu alcance através da área de edição.</p>
       <table>
         <thead>
           <tr>
-            <th>N°'</th>
-            <th>Assunto</th>
-            <th>Editar</th>
-            <th>Excluir</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -52,11 +52,10 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <tr>
             <td><?=$ln["id"]?></td>
             <td><?=$ln["assunto"]?></td>
-            <td><a href="editar.php?id=<?=$ln["id"]?>">Editar</a></td>
-            <td><a href="excluir.php?id=<?=$ln["id"]?>">Excluir</a></td>
+            <td><a href="editar.php?id=<?=$ln["id"]?>"><img class="editar" src="images/edit.png" alt="Editar Solicitação"></a></td>
+            <td><a href="excluir.php?id=<?=$ln["id"]?>"><img class="excluir" src="images/exclude.png" alt="Editar Solicitação"></a></td>
           </tr>
           <?php } ?>
-          
 
         </tbody>
 
