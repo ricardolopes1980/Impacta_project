@@ -69,3 +69,4 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
 </body>
 </html>
+<!-- -->

@@ -88,3 +88,4 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="predio"></div>
 </body>
 </html>
+<!-- -->

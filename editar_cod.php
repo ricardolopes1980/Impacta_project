@@ -46,3 +46,5 @@ $stmt->bindParam(':descricao', $_POST["descricao"], PDO::PARAM_STR);
 $stmt->execute();
 
 header("location:listar.php");
+
+# fim
