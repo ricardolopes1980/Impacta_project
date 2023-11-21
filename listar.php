@@ -53,7 +53,7 @@ $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?=$ln["id"]?></td>
             <td><?=$ln["assunto"]?></td>
             <td><a href="editar.php?id=<?=$ln["id"]?>"><img class="editar" src="images/edit.png" alt="Editar Solicitação"></a></td>
-            <!-- <td><a href="excluir.php?id=<?=$ln["id"]?>"><img class="excluir" src="images/exclude.png" alt="Editar Solicitação"></a></td> -->
+            <td><a href="excluir.php?id=<?=$ln["id"]?>"><img class="excluir" src="images/exclude.png" alt="Excluir Solicitação"></a></td>
           </tr>
           <?php } ?>
 
