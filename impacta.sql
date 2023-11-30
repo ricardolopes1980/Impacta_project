@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Out-2023 às 01:22
+-- Tempo de geração: 30-Nov-2023 às 15:00
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 7.4.29
 
@@ -58,7 +58,9 @@ INSERT INTO `condominos` (`id`, `nome`, `cpf`, `email`, `fone_whatsapp`, `aparta
 (20, '2', '2', '2', '2', '2', '2', '2'),
 (21, 'ddd', 'd', 'd', 'd', 'd', 'd', 'd'),
 (30, '3', '3', '3', '3', '3', '3', '3'),
-(36, 'Joilma Silva', '2250326653', 'impacta@impacta.com.br', '11-99629-9641', '121', '', '123456');
+(36, 'Joilma Silva', '2250326653', 'impacta@impacta.com.br', '11-99629-9641', '121', '', '123456'),
+(38, 'Victor Mendes', '1112332322', 'victor@impacta.com.br', '1122808371', '99', '', '123456'),
+(39, 'Antonio Dias', '1112332322', 'antonio@yopmail.com', '11-99629-9835', '32', '', '123456');
 
 -- --------------------------------------------------------
 
@@ -82,13 +84,19 @@ CREATE TABLE `solicitacoes` (
 
 INSERT INTO `solicitacoes` (`id`, `nome`, `assunto`, `setor`, `areacomum`, `apartamento`, `descricao`) VALUES
 (1, 'Ricardo Lopes', 'Limpeza', NULL, NULL, '23', NULL),
-(210, 'Ricardo Lopes', 'Limpeza', NULL, NULL, '83', NULL),
 (211, 'Ricardo Lopes', 'Limpeza', NULL, NULL, '121', 'testes'),
 (212, 'Ricardo Lopes', 'Limpeza', NULL, NULL, '121', 'testes'),
 (213, 'Jair', 'Limpeza', '1', NULL, '121', 'testes'),
 (214, 'João da Silva', 'Limpeza', '3', NULL, '32', 'testes'),
 (215, 'Thiago Barbosa', 'Testes', '3', '6', '115', 'Testes'),
-(216, 'Ricardo Lopes', 'Limpeza', '2', '2', '123', 'Limpeza de 03/10/2023');
+(216, 'Ricardo Lopes', 'Limpeza', '2', '2', '123', 'Limpeza de 03/10/2023'),
+(217, 'Victor Mendes', 'Limpeza', '1', '3', '99', 'Teste de cadastro'),
+(218, 'Victor Mendes', 'Limpeza', '1', '3', '99', 'Teste de cadastro'),
+(219, 'Victor Mendes', 'Limpeza', '2', '2', '23', 'Testes de solicitacao'),
+(220, 'Antonio Dias', 'Troca de lâmpada', '3', '3', '32', 'Testes de solicitação'),
+(221, 'Ricardo Lopes', 'Teste de linha 2', '1', '2', '83', 'Testes'),
+(223, 'Ricardo Lopes', 'Teste ', 'Escolha...', 'Escolha...', '83', 'Testes ALTERADO'),
+(224, 'Ricardo Lopes', 'ENVIO AC03 RICARDO', '1', '4', '83', 'Testes do ENVIO PARA O VICTOR');
 
 --
 -- Índices para tabelas despejadas
@@ -114,13 +122,13 @@ ALTER TABLE `solicitacoes`
 -- AUTO_INCREMENT de tabela `condominos`
 --
 ALTER TABLE `condominos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT de tabela `solicitacoes`
 --
 ALTER TABLE `solicitacoes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
